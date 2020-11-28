@@ -1,8 +1,9 @@
 //  引数nで指定された整数の序数詞を表示する関数printCardinalをSwiftで定義しなさい。（例：23 → 23rd） *
 
 func printCardinal (x: Int) {
-    // print(String(repeating: "ABC", count: x))
-    if (x % 10 == 1){
+    if (x == 11 || x == 12 || x == 13){
+        print("\(x)th")
+    }else if (x % 10 == 1){
         print("\(x)st")
     }else if (x % 10 == 2) {
         print("\(x)nd")
@@ -13,4 +14,4 @@ func printCardinal (x: Int) {
     }
 }
 
-printCardinal(x: 4)
+printCardinal(x: 11)
