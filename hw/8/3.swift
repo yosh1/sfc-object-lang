@@ -3,9 +3,9 @@
 // （各数は次のように対応： 0〜12…♠️A〜♠️K, 13〜25…♡A〜♡K, 26〜38…♢A〜♢K, 39〜51…♣️A〜♣️K） *
 
 func printCard(card: Int){
-    while(card % 1...12 == 0){
-        print("a")
-    }
+    // x = 1 ~ 12 まで繰り返す
+    // card % x == 0 で switch
+    // あまりで記号
 }
 
 printCard(card: 1)
